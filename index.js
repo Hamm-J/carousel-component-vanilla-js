@@ -4,7 +4,12 @@ const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
 let carouselPosition = 1;
-const carouselWidth = carouselImages[0].clientWidth;
+let carouselWidth = carouselImages[0].clientWidth;
+
+window.addEventListener("resize", () => {
+  carouselWidth = carouselImages[0].clientWidth;
+});
+
 console.log(carouselWidth);
 
 carouselSlide.style.transform = `translateX(-${
