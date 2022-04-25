@@ -3,10 +3,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .carousel__container {
+  margin: 0 auto;
+  /* max-width: 800px; */
+  /* max-height: 600px; */
   width: 100vw;
   height: 100vh;
   position: relative;

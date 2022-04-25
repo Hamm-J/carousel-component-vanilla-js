@@ -8,6 +8,10 @@ let carouselWidth = carouselImages[0].clientWidth;
 
 window.addEventListener("resize", () => {
   carouselWidth = carouselImages[0].clientWidth;
+  carouselSlide.style.transform = `translateX(-${
+    carouselWidth * carouselPosition
+  }px)`;
+  console.log(carouselWidth);
 });
 
 console.log(carouselWidth);
