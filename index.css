@@ -32,17 +32,28 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
   /* aes */
+  background: none;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  border: 2px solid white;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
+  border: none;
+  border-radius: 4px;
+  outline: none;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   /* aes */
-  background-color: red;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btn:active {
+  /* aes */
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #prevBtn {
