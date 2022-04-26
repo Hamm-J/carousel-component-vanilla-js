@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* aes */
   background-color: black;
 }
 
@@ -31,6 +32,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  /* aes */
   cursor: pointer;
   border: 2px solid white;
   padding: 10px 20px;
@@ -39,6 +41,7 @@ body {
 }
 
 .btn:hover {
+  /* aes */
   background-color: red;
 }
 
