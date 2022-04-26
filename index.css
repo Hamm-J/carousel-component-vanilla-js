@@ -51,6 +51,7 @@ body {
   border: none;
   border-radius: 1vh;
   outline: none;
+  transition: background-color 100ms ease-in-out;
 }
 
 .btn:hover,

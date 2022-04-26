@@ -1,5 +1,5 @@
 const carouselSlide = document.querySelector(".carousel__slide");
-const carouselImages = document.querySelectorAll(".carousel__img-wrapper");
+const carouselImages = document.querySelectorAll(".carousel__img");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
