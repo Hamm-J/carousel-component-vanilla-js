@@ -1,13 +1,12 @@
-# Revela Assessment Task2 - Carousel
+# Carousel Component Vanilla JS
 
 ## Description
 
-For the assessment, I decided to implement option 1, a carousel of images that the
-user can rotate by clicking on left or right buttons in the respective direction.
+A carousel of images that the user can rotate left or right by clicking on the respective left and right buttons.
 
 This component was designed with a mobile first approach and supports various
-mobile view ports. The carousel also supports infinite looping. The user can
-keep clicking a single button, and the carousel will rotate seemlessly. For viewports that exceed a width of 2400px, the carousel no longer occupies the total viewport.
+mobile view ports. The carousel also supports looping; the user can
+continously click a single button and the carousel will continue rotate without end. For viewports that exceed a width of 2400px, the carousel no longer occupies the total viewport.
 
 ### Technologies
 
