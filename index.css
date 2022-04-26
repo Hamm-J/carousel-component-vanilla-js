@@ -3,21 +3,21 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: black; */
+  background-color: black;
 }
 
 .carousel__container {
   margin: 0 auto;
-  /* max-width: 800px; */
-  /* max-height: 600px; */
   width: 100vw;
   height: 100vh;
+  max-width: 1920px;
   position: relative;
   overflow: hidden;
 }
 
 .carousel__img {
   width: 100vw;
+  /* height: 100vh; */
   object-fit: cover;
 }
 
@@ -27,6 +27,7 @@ body {
 }
 
 .btn__container {
+  /* position: relative; */
 }
 
 .btn {
