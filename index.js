@@ -16,11 +16,17 @@ window.addEventListener("resize", () => {
   }px)`;
 });
 
-// Rotate the carousel to the left once to avoid the duplicate last slide (which
-// is actually at the start of the carousel)
-carouselSlide.style.transform = `translateX(-${
-  carouselWidth * carouselPosition
-}px)`;
+// Safari was returning a different clientWidth on page refresh so I added an
+// event handler to the window on load to redefine the carouselWidth
+window.addEventListener("load", () => {
+  // Update carouselWidth on viewport load
+  carouselWidth = carouselImages[0].clientWidth;
+  // Rotate the carousel into position according to the new carouselWidth on
+  // viewport resize
+  carouselSlide.style.transform = `translateX(-${
+    carouselWidth * carouselPosition
+  }px)`;
+});
 
 nextBtn.addEventListener("click", () => {
   // Prevent the user to click faster than the transition animation and go
