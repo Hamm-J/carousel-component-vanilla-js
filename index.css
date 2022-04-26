@@ -45,8 +45,8 @@ body {
   background: none;
   font-size: 6vh;
   padding: 0 1vh;
-  color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   border: none;
   border-radius: 1vh;
@@ -57,13 +57,13 @@ body {
 .btn:hover,
 .btn:focus {
   /* aes */
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .btn:active {
   /* aes */
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #prevBtn {
