@@ -5,7 +5,7 @@
 A carousel of images that the user can rotate left or right by clicking on the respective left and right buttons.
 
 This component was designed with a mobile first approach and supports various
-mobile view ports. The carousel also supports looping; the user can
+mobile viewports. The carousel also supports looping; the user can
 continously click a single button and the carousel will continue rotate without end. For viewports that exceed a width of 2400px, the carousel no longer occupies the total viewport.
 
 ### Technologies
@@ -17,8 +17,7 @@ only a single image could be viewed at a time.
 
 With JavaScript, I accessed the width of the images and initiated a position counter. I
 added event listeners to each of the buttons. When the button is clicked, the
-image's container is translated on the x-axis according to the image's width.
-This gives the illusion that the carousel is turning.
+image's container is translated on the x-axis according to the image's width multiplied by the carousel position. I also added an animation to the `transform: translateX(...)` attribute; this gives the illusion that the carousel is turning.
 
 To create the infinite looping, I did a quick trick and duplicated the the first
 and the last images in the carousel. I put the duplicate of the last image in the
@@ -29,14 +28,14 @@ carousel reset.
 ### Future Optimizations
 
 - **Optimize image size**: The images I used for this demo are quite large. Each is around 2400px by 3000px. If this were a component for production, I would want to serve the user resized images that match their viewport size. This would decrease the size of the initial payload.
-- **Optimize Infinite scrolling**: If this were a production component, I would want to think of another way to create the infinite scrolling that doesn't involved unnecessarily increasing the initial packet size by having 2 extra images. For large images, this could be quite costly on the initial loading speed.
+- **Optimize Infinite scrolling**: If this were a production component, I would want to think of another way to create the infinite scrolling that doesn't involved increasing the initial packet size by having 2 extra duplicate images. For large images, this could be quite costly on the initial loading speed.
 
 ## How to run the project locally
 
-1. Clone the GitHub Repository
+1. Clone the GitHub Repository with your terminal
 
 ```
-https://github.com/Hamm-J/carousel-component-vanilla-js.git
+git clone https://github.com/Hamm-J/carousel-component-vanilla-js.git
 ```
 
 2. Open `index.html` in your browser of choice. Done!
