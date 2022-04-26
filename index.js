@@ -11,10 +11,7 @@ window.addEventListener("resize", () => {
   carouselSlide.style.transform = `translateX(-${
     carouselWidth * carouselPosition
   }px)`;
-  console.log(carouselWidth);
 });
-
-console.log(carouselWidth);
 
 carouselSlide.style.transform = `translateX(-${
   carouselWidth * carouselPosition
