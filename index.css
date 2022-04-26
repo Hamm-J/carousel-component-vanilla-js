@@ -12,8 +12,8 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 160px;
-  max-width: 1920px;
-  max-height: 2967px;
+  max-width: 2400px;
+  max-height: 3848px;
   position: relative;
   overflow: hidden;
 }
